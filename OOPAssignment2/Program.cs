@@ -1,15 +1,24 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
+
 namespace OOPAssignment2
 {
     class Program
     {
-        static void Main(string[] args)
+        private static readonly HashAlgorithm hashingAlgorithm = SHA512.Create();
+        private static byte[] GetShaHash(string filename)
         {
-            var string1 = File.ReadAllLines("text1.txt");
-            var string2 = File.ReadAllLines("text2.txt");
-            Console.WriteLine(string1.SequenceEqual(string2) ? "These are the same!" : "These aren't the same");
+            using FileStream stream = File.OpenRead(filename);
+            return hashingAlgorithm.ComputeHash(stream);
+        }
+
+        static void Main()
+        {
+            var hash1 = GetShaHash("text1.txt");
+            var hash2 = GetShaHash("text2.txt");
+            Console.WriteLine(hash1.SequenceEqual(hash2) ? "These are the same!" : "These aren't the same");
         }
     }
 }
