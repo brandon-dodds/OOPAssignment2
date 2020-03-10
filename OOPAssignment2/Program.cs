@@ -22,7 +22,6 @@ namespace OOPAssignment2
             }
             return hash;
         }
-
         public static void Diff(string path1, string path2)
         {
             var hash1 = GetShaHash(path1);
@@ -49,7 +48,6 @@ namespace OOPAssignment2
                 Console.WriteLine("Hash could not be computed due to null values.");
             }
         }
-
         static void Main()
         {
             while (true)
