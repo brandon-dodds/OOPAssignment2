@@ -37,7 +37,7 @@ namespace OOPAssignment2
                 }
                 else
                 {
-                    Console.Write(">: [Output] ");
+                    Console.Write(">: [OUTPUT] ");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write($"{path1} and {path2} are different. \n");
                     Console.ForegroundColor = ConsoleColor.White;
