@@ -30,7 +30,7 @@ namespace OOPAssignment2
             {
                 if (hash1.SequenceEqual(hash2))
                 {
-                    Console.Write(">: [Output] ");
+                    Console.Write(">: [OUTPUT] ");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.Write($"{path1} and {path2} are not different. \n");
                     Console.ForegroundColor = ConsoleColor.White;
