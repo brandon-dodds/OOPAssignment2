@@ -17,7 +17,7 @@ namespace OOPAssignment2
                 // Split based on the user input.
                 switch (userSplit[0])
                 {
-                    // Diff is the only command implemented thus far.
+                    // Diff and help are the only commands thus far.
                     case "diff":
                         HashCodes fileHashResult = Diff(userSplit[1], userSplit[2]);
                         Output.HashOutput(fileHashResult);
