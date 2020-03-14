@@ -1,4 +1,5 @@
 ﻿using System;
+using static OOPAssignment2.HashResult;
 
 namespace OOPAssignment2
 {
@@ -18,7 +19,7 @@ namespace OOPAssignment2
                 {
                     // Diff is the only command implemented thus far.
                     case "diff":
-                        var fileHashResult = HashResult.Diff(userSplit[1], userSplit[2]);
+                        HashCodes fileHashResult = Diff(userSplit[1], userSplit[2]);
                         Output.HashOutput(fileHashResult);
                         break;
                     case "help":
