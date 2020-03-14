@@ -27,5 +27,10 @@ namespace OOPAssignment2
                     break;
             }
         }
+        public static void HelpOutput()
+        {
+            Console.WriteLine("The diff command is the only command implemented. " +
+                "You can use it by typing diff text1.txt text2.txt\n");
+        }
     }
 }
