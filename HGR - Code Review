@@ -1,0 +1,14 @@
+Program.cs:
+	Error checking is flawed:
+	if user provides no files arguments then an exception is thrown at line 22
+	if user enters a filename with spaces at the start, or end, of the filename these are not trimmed and an exception is thrown at line 19
+	user input is not casted to lower, so commands entered in uppercase format, or with spaces, do not get caught in the switch case at line 18
+	If the files are renamed from .txt to another format, the hash check throws the incorrect result, and says it's the same as the initial file.
+	\n is used instead of Environment.Newline. This is bad practise for cross-platform coding.
+HashResult.cs:
+	var is used where it is not clear what the return value is.
+	Hashresult class should be static, as there is nothing to instantiate
+Output.cs:
+	Output class should be static, as there is nothing to instantiate
+	HelpOutput could use lamba.
+Docstrings are not used.
