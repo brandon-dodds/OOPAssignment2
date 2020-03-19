@@ -1,0 +1,15 @@
+Comments:
+Commenting is clear and used effectively throughout.
+
+Error Handling:
+Good use of switch cases to provide user with error message if input is not valid.
+Use of try catch to handle file not found exception and provides error message for each file which is great. 
+Could maybe add what exception is being caught in the error message. 
+Errors occur if extra spaces are added within the user input between file name.
+Errors occur if upper case letters are used.
+
+Suggestions for improvement:
+Provides user with a help section, with name of text files, if the user input is incorrect. 
+Variables are appropriately named.  
+Doesn't allow the user to stop running the program, just continues to loop so could provide an option to allow the user to exit once finished.
+Code has good functionality and does what the task asks for, however some code may not be needed as not asked for.
