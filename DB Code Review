@@ -1,0 +1,10 @@
+1) The code is well commented. However, there could be more clarification on certain line to further 
+clarify what the specific section of codes does. For example on lines 22-30 there could potentailly be 
+more clarification on what each line does.
+
+2) The code generally handles errors well. If the file is itself is altered to a .png the same results 
+will be demonstrated as if the files was .txt.
+
+
+3) A suggestion that could be made in order to improve the code would be potentailly having more 
+comments for certain lines of code to further illustrate and explain what they do. 
