@@ -2,5 +2,13 @@ Good things:
  - Good use of the super-class HashAlgorithm. Means you don't have to change the field type if you want to change the Hashing Algorithm
  - The main file is nice and short and concise which aids readability.
  - Where comments are included, they are helpful and concise.
- - Format strings are used effectively which aids readability
+ - Format strings are used effectively which aids readability.
+ - The correct exceptions have been used so as to not catch an unnecassary number of exceptions.
  
+Some things to improve:
+ - Nit* The HashCodes enum, as per C# style conventions, should have all it's members be UpperCamelCase
+ - Output lines 14 and 20 could be moved to one statement after line 12 to reduce repeated code.
+ - Output lines 17 and 23 could be moved after the switch statement to reduce repeated code.
+ - Program: It would be sensible to give a user to exit instead of having to use Ctrl+C. Using the current system an "exit" command would suffice.
+ - Program#22: Importing the Diff method statically is, in my opinion, not a good idea since it leads a reader to think that the method comes from the calling class. To aid readability, it might be better to do HashResult.Diff()
+ - Program#22: No length checks have been used on the length of the "userSplit" array meaning that, if the user doesn't enter the appropriate arguments, an IndexOutOfRangeException will be thrown.
