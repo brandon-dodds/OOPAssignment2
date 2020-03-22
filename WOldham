@@ -1,0 +1,6 @@
+Good things: 
+ - Good use of the super-class HashAlgorithm. Means you don't have to change the field type if you want to change the Hashing Algorithm
+ - The main file is nice and short and concise which aids readability.
+ - Where comments are included, they are helpful and concise.
+ - Format strings are used effectively which aids readability
+ 
